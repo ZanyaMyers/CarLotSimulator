@@ -40,10 +40,17 @@ namespace CarLotSimulator
             toyota.MakeEngineNoise();
             toyota.MakeHonkNoise();
 
+            Console.WriteLine($"Number of Cars in Carlot: ");
+                Console.WriteLine($"{Carlot.numberOfCars}");
+
             Car mazada = new Car(1996, "Mazda", "Miata", "Prr", "Beep beep"); // object initializer syntax
 
             mazada.MakeEngineNoise();
             mazada.MakeHonkNoise();
+
+            Console.WriteLine("");
+            Console.WriteLine($"Number of Cars in Carlot: ");
+               Console.WriteLine($"{Carlot.numberOfCars}");
 
             Car honda = new Car();
             honda.Year = 1996;
@@ -54,6 +61,10 @@ namespace CarLotSimulator
 
             honda.MakeEngineNoise();
             honda.MakeHonkNoise();
+
+            Console.WriteLine("");
+            Console.WriteLine($"Number of Cars in Carlot: ");
+              Console.WriteLine($"{Carlot.numberOfCars}");
         }
     }
 }
